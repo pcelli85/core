@@ -44,6 +44,7 @@ It can be done directly via the interface in the Settings page (top right in the
 Enjoy the Cat!  
 Follow instructions on how to run it with [docker compose and volumes](https://cheshire-cat-ai.github.io/docs/quickstart/installation-configuration/).
 
+```python
 services:
 
   cheshire-cat-core:
@@ -56,7 +57,7 @@ services:
       - ./static:/app/cat/static
       - ./plugins:/app/cat/plugins
       - ./data:/app/cat/data
-
+```
 
 ## Minimal plugin example
 
