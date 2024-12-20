@@ -1,4 +1,4 @@
-name: Cheshire-Cat Action on Pull Requests
+name: MimmoAI Action on Pull Requests
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -25,6 +25,6 @@ jobs:
       - name: Cat up
         run: docker compose up -d
       - name: Test
-        run: docker exec cheshire_cat_core python -m pytest --color=yes .
+        run: docker exec mimmoai python -m pytest --color=yes .
       - name: Cat down
         run: docker compose down

@@ -1,5 +1,5 @@
 [project]
-name = "Cheshire-Cat"
+name = "MimmoAI"
 description = "Production ready AI assistant framework"
 version = "1.7.1"
 requires-python = ">=3.10"

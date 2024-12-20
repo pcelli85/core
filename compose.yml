@@ -1,10 +1,10 @@
 
 services:
 
-  cheshire-cat-core:
+  mimmoai:
     build:
       context: ./core
-    container_name: cheshire_cat_core
+    container_name: MimmoAI
     # Uncomment the two lines below to use your .env (see .env.example)
     #env_file:
     #  - .env

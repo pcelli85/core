@@ -6,7 +6,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Remote Attach to Cat",
+            "name": "Python: Remote Attach to MimmioAI",
             "type": "python",
             "request": "attach",
             "connect": {
