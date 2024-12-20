@@ -44,6 +44,20 @@ It can be done directly via the interface in the Settings page (top right in the
 Enjoy the Cat!  
 Follow instructions on how to run it with [docker compose and volumes](https://cheshire-cat-ai.github.io/docs/quickstart/installation-configuration/).
 
+services:
+
+  cheshire-cat-core:
+    image: ghcr.io/pcelli85/core-mimmoai:latest
+    container_name: cheshire_cat_core
+    ports:
+      - 1865:80
+      - 5678:5678
+    volumes:
+      - ./static:/app/cat/static
+      - ./plugins:/app/cat/plugins
+      - ./data:/app/cat/data
+
+
 ## Minimal plugin example
 
 ```python
